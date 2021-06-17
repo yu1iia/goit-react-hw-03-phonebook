@@ -44,7 +44,7 @@ class App extends Component {
     const prevContacts = prevState.contacts;
 
     if (nextContacts !== prevContacts) {
-      console.log('Обновилось поле contacts, записываю todos в хранилище');
+      console.log('Обновилось поле contacts, записываю contact в хранилище');
       if (prevState.contacts !== this.state.contacts) {
         localStorage.setItem('contacts', JSON.stringify(this.state.contacts));
       }
